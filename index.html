@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dicas de sustentabilidade, projetos e ações ecológicas para proteger o meio ambiente. Participe de nossa missão!">
+    <title>Juntos pelo Planeta - Dicas de Sustentabilidade</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <h1>Juntos pelo Planeta</h1>
+        <nav>
+            <ul>
+                <li><a href="#dicas">Dicas de Sustentabilidade</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#testemunhos">Testemunhos</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="dicas" class="section tips">
+            <h2>Dicas para Proteger o Meio Ambiente</h2>
+            <img src="img/Floresta Paisagem.jpeg" alt="Floresta preservada com vida animal" />
+            <p>Adote hábitos sustentáveis e faça a diferença. Clique nas dicas para saber mais:</p>
+            <ul>
+                <li>
+                    <strong>Reduza o uso de plástico:</strong>
+                    <p>Evite produtos descartáveis. Use sacolas reutilizáveis.</p>
+                </li>
+                <li>
+                    <strong>Recicle sempre que possível:</strong>
+                    <p>Separe seu lixo corretamente, reciclando papel, plástico e vidro.</p>
+                </li>
+                <li>
+                    <strong>Opte por transporte sustentável:</strong>
+                    <p>Utilize bicicletas, transporte público ou caminhe quando possível.</p>
+                </li>
+                <li>
+                    <strong>Consuma produtos locais:</strong>
+                    <p>Apoie a economia local e reduza a pegada de carbono comprando alimentos da sua região.</p>
+                </li>
+                <li>
+                    <strong>Desligue luzes e aparelhos:</strong>
+                    <p>Ao sair de um ambiente, desligue as luzes e os eletrônicos que não estão em uso.</p>
+                </li>
+                <li>
+                    <strong>Economize água:</strong>
+                    <p>Tome banhos mais curtos e conserte vazamentos em casa.</p>
+                </li>
+                <li>
+                    <strong>Use energia renovável:</strong>
+                    <p>Considere instalar painéis solares em sua casa.</p>
+                </li>
+                <li>
+                    <strong>Plante árvores:</strong>
+                    <p>Participe de campanhas de reflorestamento ou plante árvores em sua área.</p>
+                </li>
+                <li>
+                    <strong>Eduque outros:</strong>
+                    <p>Compartilhe seu conhecimento sobre práticas sustentáveis com amigos e familiares.</p>
+                </li>
+                <li>
+                    <strong>Participe de iniciativas:</strong>
+                    <p>Envolva-se em grupos que promovem a conservação ambiental.</p>
+                </li>
+            </ul>
+            <a href="#galeria" class="button">Saiba Mais</a>
+        </section>
+
+        <section id="sobre" class="section">
+            <h2>Quem Somos</h2>
+            <img src="img/Economia Circular_ Resíduo de espuma vira substrato em projeto socioambiental.jpeg" alt="Equipe trabalhando em projeto de economia circular" />
+            <p>Somos uma organização dedicada à promoção da sustentabilidade e proteção do meio ambiente...</p>
+        </section>
+
+        <section id="testemunhos" class="section">
+            <h2>O que dizem nossos apoiadores</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p>"Comecei a usar sacolas reutilizáveis e percebi a diferença que faço no meio ambiente!" - Ana</p>
+                </div>
+                <div class="testimonial">
+                    <p>"Participar de campanhas de reflorestamento foi uma das melhores decisões que tomei." - João</p>
+                </div>
+                <div class="testimonial">
+                    <p>"Agora sempre que posso, opto por produtos locais. Isso faz toda a diferença!" - Maria</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" class="section gallery">
+            <h2>Galeria de Projetos</h2>
+            
+            <div class="gallery-row">
+                <img src="img/re.jpg" alt="Projeto de reflorestamento em andamento" />
+                <img src="img/limpo.jpg" alt="Equipe participando de limpeza de praia" />
+                <img src="img/horta comunitaria.jpg" alt="Horta comunitária urbana" />
+            </div>
+           
+            <div class="gallery-row">
+                <img src="img/oi.jpg" alt="Horta comunitária urbana" />
+                <img src="img/Economia Circular_ Resíduo de espuma vira substrato em projeto socioambiental.jpeg" alt="Horta comunitária urbana" />
+                <img src="img/projeto_recriar.jpg" alt="Horta comunitária urbana" />
+            </div>
+            <p>Veja como estamos fazendo a diferença na comunidade!</p>
+        </section>
+
+        <section id="contato" class="section">
+            <h2>Contato</h2>
+            <p>Para mais informações, entre em contato conosco através do e-mail: <a href="mailto:https://nando244.github.io/Eco-Vida/">https://nando244.github.io/Eco-Vida/</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <img class="Logo.png" src="img/Logo.png" alt="Logo" />
+        Todos os direitos reservados
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            header.classList.toggle('scrolled', window.scrollY > 0);
+        });
+
+        document.querySelectorAll('.tips li').forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('open');
+            });
+        });
+    </script>
+</body>
+</html>
